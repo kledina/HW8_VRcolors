@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Intro-Bold-Caps';
+    src: url(../assets/fonts/Intro-Bold-Caps/Intro-Bold-Caps.eot) format('eot'),
+    url(../assets/fonts/Intro-Bold-Caps/Intro-Bold-Caps.woff) format('woff'),
+    url(../assets/fonts/Intro-Bold-Caps/Intro-Bold-Caps.ttf) format('ttf');
+    font-family: 'Roboto Slab', serif;
+}
+body {
+    display:grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 5% 80% 15%;
+}
+.header {
+    grid-area: 1/1/2/3;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+.header__browser {
+    grid-area: 1/1/2/2;
+}
+.header__vr {
+    grid-area: 1/2/2/3;
+    align-self: center;
+}
+.main {
+    grid-area: 2/1/4/3;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 15% 75%;
+}
+.main__logo {
+    grid-area: 1/1/2/2;
+    margin-left: 12%;
+    align-self: center;
+}
+.main__cart {
+    grid-area: 1/2/2/3;
+    margin-right: 12%;
+    align-self: center;
+    justify-self: end;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    background: #5222D0;
+    border-radius: 100px;
+    width: 16%;
+    height: 30%;
+    border-color: #5222D0;
+    font-family: 'Intro-Bold-Caps';
+    font-size: 1em;
+    font-weight: bolder;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.main__h1 {
+    grid-area: 3/1/4/2;
+    margin-left: 18%;
+    font-family: 'Intro-Bold-Caps';
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 5%;
+}
+.main__description {
+    margin-left: 18%;
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    line-height: 32px;
+    font-size: 1.5em;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 5%;
+}
+.main__buy {
+    margin-left: 18%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: #5222D0;
+    border-radius: 100px;
+    width: 40%;
+    height: 14%;
+    border-color: #5222D0;
+    font-family: 'Intro-Bold-Caps';
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.main__image {
+    grid-area:1/2/2/3;
+}
+.footer {
+    grid-area: 4/1/5/3;
+}
+.footer__nav {
+    margin-left: 6%;
+}
+.footer__nav__menu {
+    padding: 1.8%;
+    text-decoration: none;
+    color: #5222D0;
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
